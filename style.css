@@ -1,0 +1,358 @@
+body{
+	background-color: rgb(215, 204, 182);
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 80%);
+	display: flex;
+	align-items: center;
+	z-index: 1;
+}
+
+
+.dropbtn {
+	display: none;
+  background-color: transparent;
+  color: rgb(215, 204, 182);
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: rgb(215, 204, 182);
+color: rgba(0, 0, 0, 80%);
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 80%);
+  min-width: 160px;
+  overflow: auto;
+  margin-top: 0;
+  margin-left: 0;
+  	text-align: left;
+  z-index: 1;
+}
+
+.dropdown-content a, h1 {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+	background-color: rgb(215, 204, 182); 
+	color: rgba(0, 0, 0, 80%);
+}
+
+.show {display: block;}
+
+
+.logo{
+	display: block;
+	width: 100px;
+	height: auto;
+	padding: 0;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.logo:hover 
+{
+  opacity: 80%;
+
+}
+
+.navbar{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: auto;
+}
+.navbar a{
+	font-size: 30px;
+	color: rgb(215, 204, 182);
+	text-decoration: none;
+	margin: 0;
+	padding: 5px;
+}
+.navbar a:hover{
+opacity: 60%}
+
+
+
+
+
+
+.add{
+	display: none;
+	max-width: 728px;
+	max-height: 90px;
+	background-color: rgb(245, 234, 212);
+	margin-top: 13px;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.add:hover{
+	  animation: shake 0.5s;
+	    animation-iteration-count: infinite;
+
+}
+.add2{
+	width: 160px;
+	height: 500px;
+	background-color: rgb(245, 234, 212);
+	margin-top: 113px;
+	border-radius: 15px;
+}
+.add2:hover{
+	  animation: shake 0.5s;
+	    animation-iteration-count: infinite;
+
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+footer{
+	background-color: rgb(125, 114, 102);
+	text-align: center;
+	font-size: 50px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+.linija2{
+	width: 100%;
+	height: 1px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	background-color:  rgb(215, 204, 182);
+}
+.yt{
+	color: rgb(215, 204, 182);
+}
+.ig{
+	color: rgb(215, 204, 182);
+}
+.tt{
+	color: rgb(215, 204, 182);
+}
+.fb{
+	color: rgb(215, 204, 182);
+}
+
+
+
+/*slika sajt*/
+
+.telo2{
+	display: flex;
+	position: relative;
+	margin: auto;
+	margin-top: 80px;
+	padding: 30px;
+	background-color: rgb(245, 234, 212);
+	max-width: 90%;
+	border-radius: 20px;
+}
+
+#myImg {
+	border: solid 8px rgb(215, 204, 182);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 450px;
+  width: 400px;
+  object-fit: cover;
+  margin-left: 30px;
+}
+
+#myImg:hover {  filter: blur(3px); opacity: 0.9}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.h2{
+	position: absolute;
+			margin-left: 400px;
+			margin-top: 50px;
+			font-size: 38px;
+			color: 	rgb(0, 153, 0);
+}
+.h3{
+	position: absolute;
+			margin-left: 460px;
+			margin-top: 50px;
+			font-size: 25px;
+			color: 	rgb(0, 153, 0);
+}
+.p{
+	position: relative;
+	margin-top: 120px;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1309px){
+.dropbtn{
+	display: block;
+}
+
+.add2{
+display: none;
+}
+.add{
+	display: block;
+}
+
+.kategorija{
+	display: none;
+}
+
+.logo{
+	margin-left: 50px;
+}
+.mk{
+	margin-left: 45px;
+}
+
+}
+
+@media (max-width: 800px){
+.container{
+	width: 100%;
+}
+.add{
+	width: 100%;
+}
+}
+
+.dropdown-content{
+	max-width: 800px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+header{
+	justify-content: space-between;
+}
+.dropbtn{
+	margin: auto;
+}
+.logo{
+	margin: auto;
+}
+.navbar{
+	margin-left: auto;
+}
+
+
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
